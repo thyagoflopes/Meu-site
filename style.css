@@ -1,0 +1,34 @@
+:root{--mar:#0f2a33;--agua:#1d5566;--bruma:#eef3f4;--tinta:#10222b;--chama:#e8590c;--linha:#c9d6da}
+*{box-sizing:border-box}
+body{margin:0;font:1.05rem/1.7 "Source Sans 3",system-ui,sans-serif;color:var(--tinta);background:var(--bruma)}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.2;color:var(--mar)}
+a{color:var(--agua)}a:focus-visible{outline:3px solid var(--chama);outline-offset:3px}
+header{background:var(--mar);color:#fff;padding:1.5rem 1.5rem 0}
+.marca{max-width:1000px;margin:0 auto 1rem}
+.marca strong{font:700 1.7rem "Fraunces",Georgia,serif}
+.marca span{display:block;color:#b9ccd2;font-size:.95rem}
+nav{max-width:1000px;margin:0 auto}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem}
+nav a{display:block;padding:.7rem 1.1rem;color:#dbe7ea;text-decoration:none;border-bottom:4px solid transparent}
+nav a:hover{color:#fff}
+nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--chama)}
+main{max-width:1000px;margin:0 auto;padding:2.5rem 1.5rem 3rem}
+main h1{font-size:2.3rem;margin-top:0}
+main p{max-width:68ch}
+.destaques{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;margin-top:1.5rem}
+.destaques figure{margin:0}
+.destaques img{width:100%;height:auto;display:block;border:1px solid var(--linha)}
+.destaques figcaption{padding-top:.7rem}
+.destaques h3{margin:.2rem 0}
+.lide{font-size:1.2rem}
+.dado{border-left:5px solid var(--chama);padding:.4rem 0 .4rem 1.2rem;margin:2rem 0;font:1.25rem/1.5 "Fraunces",Georgia,serif;max-width:60ch}
+table{border-collapse:collapse;width:100%;max-width:760px;margin:1.5rem 0}
+th,td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--linha)}
+th{background:var(--mar);color:#fff}
+form{display:grid;gap:1rem;max-width:520px}
+label{display:grid;gap:.3rem;font-weight:600}
+input,textarea{font:inherit;padding:.6rem;border:1px solid var(--agua);background:#fff}
+button{font:inherit;font-weight:700;padding:.75rem 1.4rem;background:var(--chama);color:#fff;border:0;cursor:pointer;justify-self:start}
+button:hover{background:#c94a07}
+footer{background:var(--mar);color:#b9ccd2;text-align:center;padding:1.6rem 1rem;font-size:.95rem}
+@media(max-width:600px){main h1{font-size:1.8rem}nav a{padding:.6rem .7rem}}
